@@ -1,3 +1,4 @@
+#career compass
 import streamlit as st
 import pdfplumber
 from docx import Document
@@ -9,7 +10,7 @@ import pyttsx3
 import openai
 
 # Initialize Gemini AI
-API_KEY = 'Paste your API Key to work fucntionally'
+API_KEY = 'Paste your API Key to work fucntionally '
 if not API_KEY:
     st.error("❌ API Key for Gemini AI is missing. Set the environment variable `GEMINI_API_KEY`.")
     st.stop()
