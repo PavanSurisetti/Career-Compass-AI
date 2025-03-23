@@ -9,7 +9,7 @@ import pyttsx3
 import openai
 
 # Initialize Gemini AI
-API_KEY = 'AIzaSyAlpydjI2Ky9-FiESan9hg3AqfZIjVWKaw'
+API_KEY = 'Paste your API Key to work fucntionally'
 if not API_KEY:
     st.error("❌ API Key for Gemini AI is missing. Set the environment variable `GEMINI_API_KEY`.")
     st.stop()
@@ -36,6 +36,9 @@ def extract_text_from_pdf(pdf_file):
         for page in pdf.pages:
             text += page.extract_text() or ""
     return text if text.strip() else "⚠️ No text found in this PDF."
+
+
+
 
 
 def extract_text_from_docx(docx_file):
